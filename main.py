@@ -3,6 +3,7 @@ import instructions as ins
 from levels import levels
 from Question import Question
 
+
 # ==========================================================================
 # MAIN GAME KICKOFF LOGIC
 # ==========================================================================
@@ -48,7 +49,8 @@ def start_game():
 
       if result == 'walk':
          print()
-         print("You're done? Alright. Well, we hate to see you go, but we love to watch you leave. ;-)")
+         print(
+            "You're done? Alright. Well, we hate to see you go, but we love to watch you leave. ;-)")
          print("Don't fake spend it all in one place!\n")
          break
       elif result == 'succeeded':
@@ -66,6 +68,7 @@ def start_game():
 
    print('Total Winnings: $' + '{:,}'.format(total_money_won))
    print("Final Strikes: " + str(num_strikes))
+
 
 # ==========================================================================
 # LET'S GO!!!
